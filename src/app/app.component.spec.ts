@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'agl-task'`, () => {
+  it(`should have as title 'AGL Task'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('agl-task');
+    expect(app.title).toEqual('AGL Task');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('agl-task app is running!');
+    expect(compiled.querySelector('h3').textContent).toContain('AGL Task');
   });
 });
