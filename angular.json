@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "agl-task"
+    }
+  },
+  "defaultProject": "agl-task",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
