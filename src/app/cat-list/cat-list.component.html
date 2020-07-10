@@ -1,0 +1,12 @@
+<h4>CAT LIST</h4>
+<h3 *ngIf="loading$ | async">Loading...</h3>
+<ng-container *ngFor="let item of cats$ | async as list">
+  <h4>{{ item.gender }} (owners)</h4>
+  <ul>
+    <li *ngFor="let cat of item.data">{{ cat }}</li>
+  </ul>
+</ng-container>
+
+
+<!-- Error -->
+<h4 class="error" *ngIf="loadError$ | async"> Error: {{ loadError$ | async }} </h4>
